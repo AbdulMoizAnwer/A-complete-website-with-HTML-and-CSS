@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szabist Website</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #logo_div{
+            width: 100%;
+            display: inline-block;
+            background-color: white;
+        }
+        #Szabist_logo{
+            margin-top: 5px;
+            margin-left: 10px;
+            padding: 6px;
+            height: 59px;
+            float: left;
+            display: inline-block;
+        }
+        nav div{
+            height: 65px;
+            background-color: #0c54a3;;
+            display: block;
+        }
+        nav div ul li{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 12px;
+            padding: 15px;
+            color: rgb(255, 255, 255);
+            display: inline-block;
+        }
+        .navigation-bar div ul a li:hover{
+            border-bottom: 4px solid #3498db !important;
+        }
+        #left_table{
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 280px;
+            float: left;
+        }
+        #left_table table{
+            border: 0px;
+            border-collapse: collapse;
+        }
+        #login_bar{
+            color: rgb(255, 255, 255);
+            font-size: 19.2px;
+            font-family: "Segoe UI", Georgia, "Times New Roman", Times, serif;
+            padding-left: 12px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            text-align: left;
+            background-color: #0c54a3;
+            height: 43px;
+            border-left: 1px solid silver;
+            border-right: 1px solid silver;
+            border-top: 1px solid silver;
+            border-bottom: 0px;
+        }
+        #para_in_form{
+            border-top: 0px;
+            border-bottom: 0px;
+            background-color: #f7f7f7;
+            font-family: "segoe ui";
+            font-size: 12px;
+            padding: 10px;
+            border-left: 1px solid silver;
+            border-right: 1px solid silver;
+        }
+        .headings_in_table{
+            padding-left: 10px;
+            font-family: "segoe ui";
+            font-size: 12px;
+            text-align: left;
+            background-color: #f7f7f7;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-right: 1px solid silver;
+            border-left: 1px solid silver;
+            padding-top: 9px;
+            padding-bottom: 5px;
+        }
+        .selection_fields_in_table{
+            padding-left: 10px;
+            background-color: #f7f7f7;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-right: 1px solid silver;
+            border-left: 1px solid silver;
+        }
+        .width_for_selection_fields{
+            width: 252px;
+            border: 1px solid silver;
+        }
+        .button_background{
+            padding-top: 0px;
+            padding-bottom: 15px;
+            padding-left: 10px;
+            background-color: #f7f7f7;
+            border-top: 0px;
+            border-right: 1px solid silver;
+            border-left: 1px solid silver;
+            border-bottom: 1px solid silver;
+        }
+        #forgot_password_button{
+            margin-left: 5px;
+            font-family: Arial;
+            font-size: 13.3333px;
+            background-color: #0c54a3;
+            color: rgb(255, 255, 255);
+            border: 1px solid transparent;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        #login_button{
+            margin-top: 20px;
+            background-color: #0c54a3;
+            color: rgb(255, 255, 255);
+            border: 1px solid transparent;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+        #right_table{
+            border: 1px solid silver;
+            float: right;
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 10px;
+            width: 1076px;
+            height: 666px;
+            background-color: #f7f7f7;
+        }
+        .right_table_tab{
+            margin-top: 20px;
+            background-color: #0c54a3;
+            color: rgb(255, 255, 255);
+            margin-left: 5px;
+            padding: 0.5em 1em;
+            text-align: center;
+            border-top-left-radius: 0.5em;
+            border-top-right-radius: 0.5em;
+            border: none;
+        }
+        #horizontal_line_under_right_tabs{
+            margin-top: 5px;
+            margin-left: 10px;
+            width: 1048px;
+            height: 0.5px;
+            background-color: #0c54a3; 
+        }
+        #setting_margin_of_left_tab_in_right_table{
+            margin-left: 20px;
+        }
+        #notice_box{
+            display: block;
+            text-align: center;
+            width: 1013px;
+            height: 570px;
+            color: rgb(255, 255, 255);
+            background-color: #42729b;
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+        #footer_images{
+            background-color: #f7f7f7;
+            display: block;
+            margin-top: 800px;
+            border-top: 1px solid silver;
+        }
+        #footer_image1{
+            background-color: rgb(255, 255, 255);
+            border: 1px solid silver;
+            display: block;
+            width: 15%;
+            margin-top: 5%;
+            margin-left: 2.5%;
+            padding: 1%;
+            float: left;
+        }
+        #footer_image2{
+            background-color: rgb(255, 255, 255);
+            border: 1px solid silver;
+            display: block;
+            float: right;
+            margin-right: 2.5%;
+            width: 13%;
+            padding: 1%;
+            margin-top: 3%;
+        }
+        #footer_background{
+            background-color: #f7f7f7;
+        }
+        .footer_tabs{
+            margin-top: 250px;
+            display: block;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .Footer_tab_styling{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            Font-weight: 700;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .footer-bottom{
+            color: rgb(255, 255, 255);
+            background-color: #0c54a3; 
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            padding: 1%;
+            text-align: center;
+        }
+        .footer-bottom a{
+            text-decoration: none; 
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo_div">
+        <img id="Szabist_logo" src="/task13/images/logofull.png" alt="image">
+    </div>
+        <nav class="navigation-bar">
+            <div>
+                <ul>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>About</li></a>
+                    <a href=""><li>Teaching's Evaluation</li></a>
+                    <a href=""><li>EDC Job Portal</li></a>
+                    <a href=""><li>Contact</li></a>
+                </ul>
+            </div>  
+        </nav>
+    </header>
+        <div id="left_table">
+            <table border="2px">
+                <form action="">
+                    <tr><td id="login_bar">Login</td></tr>
+                    <tr><td id="para_in_form">Students and Staff can now login to their own personalized home page.</td></tr>
+                    <tr><th class="headings_in_table"><label for="">User Id</label></th></tr>
+                    <tr><td class="selection_fields_in_table"><input type="text" class="width_for_selection_fields"></td></tr>
+                    <tr><th class="headings_in_table"><label for="">Password</label></th></tr>
+                    <tr><td class="selection_fields_in_table"><input type="password" class="width_for_selection_fields"></td></tr>
+                    <tr><th class="headings_in_table"><label for="">Campus</label></th></tr>
+                    <tr><td class="selection_fields_in_table"><select name="" id="" class="width_for_selection_fields"><option value="">Gulshan-e-Iqbal</option><option value="">Gulistan-e-Jauhar</option><option value="">Defence</option><option value="">Clifton</option></select></td></tr>
+                    <tr><td class="button_background"><button type="submit" id="login_button">Login</button><button type="button" id="forgot_password_button">Forgot Password</button></td></tr>
+                </form>
+            </table>
+        </div>
+        <div id="right_table">
+            <table border="0px">
+            <tr><td><button class="right_table_tab" id="setting_margin_of_left_tab_in_right_table">Notice board</button><button class="right_table_tab">HEC Resources</button><button class="right_table_tab">Anti Plagiarism</button></td></tr>
+            <tr><td><hr id="horizontal_line_under_right_tabs"></td></tr>
+            <tr><td id="notice_box">Notices Coming Soon!</td></tr>
+        </table>
+        </div>
+        <footer id="footer_background">
+            <div id="footer_images">
+                <img src="/task13/images/zabsol.png" alt="image" id="footer_image1" >
+                <img src="/task13/images/szabist transparent.png" alt="image" id="footer_image2">
+            </div>
+            <div class="footer_tabs">
+                <a href="" class="Footer_tab_styling"><strong>Home</strong></a> |
+                <a href="" class="Footer_tab_styling"><strong>About</strong></a> |
+                <a href="" class="Footer_tab_styling"><strong>Feedback</strong></a> |
+                <a href="" class="Footer_tab_styling"><strong>Contact Us</strong></a> 
+            </div>
+            <p class="footer-bottom">
+                Copyright © 2022 <a href="">ZABSolutions</a> All Rights Reserved
+            </p>
+        </footer>
+</body>
+</html>
